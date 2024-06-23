@@ -28,5 +28,5 @@ publish:
   #! /usr/bin/env bash
   ls -l _out
   docker load < _out/*.tar
-  docker tag ghcr.io/siderolabs/installer:v{{talos_version}} ghcr.io/raylas/talos-installer:{{talos_version}}
+  docker tag ghcr.io/siderolabs/installer:v{{talos_version}} ghcr.io/raylas/talos-assets/installer:{{talos_version}}
   docker push ghcr.io/raylas/talos-installer:{{talos_version}}
