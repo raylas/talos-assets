@@ -1,5 +1,5 @@
 talos_arch := "amd64"
-talos_version := "1.7.5"
+talos_version := "1.7.4"
 
 [private]
 default:
@@ -18,8 +18,8 @@ build: clean
     -v $PWD/_out:/out \
     ghcr.io/siderolabs/imager:v{{talos_version}} installer \
     --system-extension-image ghcr.io/siderolabs/amd-ucode:20240513 \
-    --system-extension-image ghcr.io/siderolabs/zfs:2.2.4-v1.7.5 \
-    --system-extension-image ghcr.io/siderolabs/nonfree-kmod-nvidia:535.129.03-v1.7.5 \
+    --system-extension-image ghcr.io/siderolabs/zfs:2.2.4-v1.7.4 \
+    --system-extension-image ghcr.io/siderolabs/nonfree-kmod-nvidia:535.129.03-v1.7.4 \
     --system-extension-image ghcr.io/siderolabs/nvidia-container-toolkit:535.129.03-v1.14.6 \
     --system-extension-image ghcr.io/siderolabs/gvisor:20240325.0 \
     --system-extension-image ghcr.io/siderolabs/tailscale:1.68.1
